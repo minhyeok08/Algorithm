@@ -1,5 +1,5 @@
 import java.util.*;
-class Inflearn5_7 {	
+class Inflearn5_6 {	
 	public int solution(int n, int m){
 		int answer = 0;
 		Queue<Integer> Q = new LinkedList<>();
@@ -24,7 +24,7 @@ class Inflearn5_7 {
 	}
 	
 	public static void main(String[] args){
-		Inflearn5_7 T = new Inflearn5_7();
+		Inflearn5_6 T = new Inflearn5_6();
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int m = sc.nextInt();
