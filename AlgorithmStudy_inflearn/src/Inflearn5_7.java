@@ -29,7 +29,6 @@ public class Inflearn5_7 {
 		String all = sc.next();
 		System.out.println(T.Solution(essen, all));
 	}
-
 }
 
 /* Queue 활용 문제 2
@@ -38,5 +37,6 @@ public class Inflearn5_7 {
  * all 배열을 contains() 함수로 Queue에 존재하는지 검사 => true 일때 Queue 안의 x 값을 poll 했을 때 같은지 확인 =>
  * => 같지 않다면 "NO" return 같다면 Q.poll() 수행 => 반복
  * => all 배열을 모두 순회한 후 Queue에 값이 남았다면 필수 과목을 모두 수강하지 않았으므로 "NO" 출력
+ * 
  */
 
