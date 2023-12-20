@@ -51,7 +51,7 @@ class Main {
  *	 person 생성자를 통해 (id, danger) 객체를 생성하고
  *	 Queue에 값을 넣는다
  *	 
- *	 Queue를 poll 하고 그 값을 tmp로 넣어 후 순위 값들과 위험도(dagner)를 비교한다
+ *	 Queue를 poll 하고 그 값을 tmp로 넣어 후 순위 값들과 위험도(danger)를 비교한다
  *	 비교한 뒤 tmp의 위험도가 낮다면 큐에 다시 offer하고 tmp값을 null로 초기화하고 break로 for문을 빠져나온다
  *   
  *   다시 poll한값을 queue에 넣고 다시 비교하는 과정을 반복한다
