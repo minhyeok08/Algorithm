@@ -31,7 +31,6 @@ public class Inflearn6_2 {
 		{
 			System.out.print(x + " ");
 		}
-		
 	}
 
 }
