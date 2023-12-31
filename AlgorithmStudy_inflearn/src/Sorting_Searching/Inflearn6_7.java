@@ -16,7 +16,6 @@ class Point implements Comparable<Point>
 		else		// y값이 같을 때 x값 정렬
 			return this.x-O.x;
 	}
-	
 }
 public class Inflearn6_7 {	
 	public static void main(String[] args) {
