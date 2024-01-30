@@ -30,5 +30,4 @@ class Inflearn8_2{
 		T.DFS(0, 0, arr);
 		System.out.println(answer);
 	}
-	
 }
