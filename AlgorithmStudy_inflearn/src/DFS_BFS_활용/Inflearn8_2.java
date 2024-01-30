@@ -31,5 +31,4 @@ class Inflearn8_2{
 		System.out.println(answer);
 	}
 	
-	
 }
