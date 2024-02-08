@@ -1,31 +1,43 @@
 package DFS_BFS_활용;
 import java.util.*;
-class Inflearn8_8{
-	static int[] combi;
-	static int n, m;
-	public void DFS(int L, int s)
+class Inflearn8_8 {
+	static int[] dx = {-1, 0, 1, 0};
+	static int[] dy = {0, 1, 0, -1};
+	static int[][] board;
+	static int answer = 0;
+
+	public void DFS(int x, int y)
 	{
-		if(L==m)
-		{
-			for(int x : combi) 
-				System.out.print(x+" ");
-			System.out.println();
-		}
+		if(x==7 && y==7) 
+			answer++;
 		else
 		{
-			for(int i=s; i<=n; i++)
+			for(int i=0; i<4; i++)
 			{
-				combi[L] = i;
-				DFS(L+1, i+1);
+				int nx = x+dx[i];
+				int ny = y+dy[i];
+				if(nx>=1 && nx<=7 && ny>=1 && ny<=7 && board[nx][ny]==0)
+				{
+					board[nx][ny] = 1;
+					DFS(nx, ny);
+					board[nx][ny] = 0;
+				}
 			}
-		}
+		}	
 	}
+
 	public static void main(String[] args){
 		Inflearn8_8 T = new Inflearn8_8();
 		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt();
-		m = sc.nextInt();
-		combi = new int[m];
-		T.DFS(0, 1);
+		board = new int[8][8];
+		for(int i=1; i<=7; i++)
+		{
+			for(int j=1; j<=7; j++){
+				board[i][j] = sc.nextInt();
+			}
+		}
+		board[1][1] = 1;
+		T.DFS(1, 1);
+		System.out.print(answer);
 	}
 }
