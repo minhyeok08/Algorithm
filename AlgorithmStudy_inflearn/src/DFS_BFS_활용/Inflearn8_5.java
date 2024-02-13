@@ -1,20 +1,31 @@
 package DFS_BFS_활용;
 import java.util.*;
-class inflearn8_5{
-	int[][] dy = new int[35][35];
-	public int DFS(int n, int r){
-		if(dy[n][r]>0) 
-			return dy[n][r];
-		if(n==r || r==0) 
-			return 1;
-		else 
-			return dy[n][r]=DFS(n-1, r-1)+DFS(n-1, r);
+class Inflearn8_5{
+	static int n, m, answer = Integer.MAX_VALUE;
+	public void DFS(int L, int sum, Integer[] arr){
+		if(sum>m) 
+			return;
+		if(L>=answer) 
+			return;
+		if(sum==m){
+			answer = Math.min(answer, L);
+		}
+		else{
+			for(int i=0; i<n; i++){
+				DFS(L+1, sum+arr[i], arr);
+			}
+		}	
 	}
 	public static void main(String[] args){
-		inflearn8_5 T = new inflearn8_5();
+		Inflearn8_5 T = new Inflearn8_5();
 		Scanner sc = new Scanner(System.in);
-		int n=sc.nextInt();
-		int r=sc.nextInt();
-		System.out.println(T.DFS(n, r));
+		n = sc.nextInt();
+		Integer[] arr = new Integer[n];
+		for(int i=0; i<n; i++) 
+			arr[i] = sc.nextInt();
+		Arrays.sort(arr, Collections.reverseOrder());
+		m = sc.nextInt();
+		T.DFS(0, 0, arr);
+		System.out.println(answer);
 	}
 }
