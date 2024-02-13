@@ -1,28 +1,26 @@
 package DFS_BFS_활용;
-import java.util.*;
-class Point2{
-	public int x, y;
-	Point2(int x, int y){
-		this.x = x;
-		this.y = y;
-	}
-}
+import java.util.Scanner;
 class Inflearn8_10 {
 	static int[] dx = {-1, 0, 1, 0};
 	static int[] dy = {0, 1, 0, -1};
-	static int[][] board, dis;
-	static int n, m;
-	static Queue<Point2> Q = new LinkedList<>();
-	public void BFS(){
-		while(!Q.isEmpty()){
-			Point2 tmp = Q.poll();
-			for(int i=0; i<4; i++){
-				int nx = tmp.x+dx[i];
-				int ny = tmp.y+dy[i];
-				if(nx>=0 && nx<n && ny>=0 && ny<m && board[nx][ny]==0){
+	static int[][] board;
+	static int answer = 0;
+
+	public void DFS(int x, int y)
+	{
+		if(x==7 && y==7) 
+			answer++;
+		else
+		{
+			for(int i=0; i<4; i++)
+			{
+				int nx = x+dx[i];
+				int ny = y+dy[i];
+				if(nx>=1 && nx<=7 && ny>=1 && ny<=7 && board[nx][ny]==0)
+				{
 					board[nx][ny] = 1;
-					Q.offer(new Point2(nx, ny));
-					dis[nx][ny] = dis[tmp.x][tmp.y]+1;
+					DFS(nx, ny);
+					board[nx][ny] = 0;
 				}
 			}
 		}	
@@ -31,35 +29,15 @@ class Inflearn8_10 {
 	public static void main(String[] args){
 		Inflearn8_10 T = new Inflearn8_10();
 		Scanner sc = new Scanner(System.in);
-		m = sc.nextInt();
-		n = sc.nextInt();
-		board=new int[n][m];
-		dis=new int[n][m];
-		for(int i=0; i<n; i++){
-			for(int j=0; j<m; j++){
+		board = new int[8][8];
+		for(int i=1; i<=7; i++)
+		{
+			for(int j=1; j<=7; j++){
 				board[i][j] = sc.nextInt();
-				if(board[i][j]==1) 
-					Q.offer(new Point2(i, j));
 			}
 		}
-		T.BFS();
-		boolean flag = true;
-		int answer = Integer.MIN_VALUE;
-		for(int i=0; i<n; i++){
-			for(int j=0; j<m; j++){
-				if(board[i][j]==0) 
-					flag = false;
-			}
-		}
-		if(flag){
-			for(int i=0; i<n; i++){
-				for(int j=0; j<m; j++){
-					answer = Math.max(answer, dis[i][j]);
-				}
-			}
-			System.out.println(answer);
-		}
-		else 
-			System.out.println(-1);
+		board[1][1] = 1;
+		T.DFS(1, 1);
+		System.out.print(answer);
 	}
 }
