@@ -1,31 +1,20 @@
 package DFS_BFS_활용;
 import java.util.*;
-class Inflearn8_7{
-	static int[] combi;
-	static int n, m;
-	public void DFS(int L, int s)
-	{
-		if(L==m)
-		{
-			for(int x : combi) 
-				System.out.print(x+" ");
-			System.out.println();
-		}
-		else
-		{
-			for(int i=s; i<=n; i++)
-			{
-				combi[L] = i;
-				DFS(L+1, i+1);
-			}
-		}
+class inflearn8_7{
+	int[][] dy = new int[35][35];
+	public int DFS(int n, int r){
+		if(dy[n][r]>0) 
+			return dy[n][r];
+		if(n==r || r==0) 
+			return 1;
+		else 
+			return dy[n][r]=DFS(n-1, r-1)+DFS(n-1, r);
 	}
 	public static void main(String[] args){
-		Inflearn8_7 T = new Inflearn8_7();
+		inflearn8_7 T = new inflearn8_7();
 		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt();
-		m = sc.nextInt();
-		combi = new int[m];
-		T.DFS(0, 1);
+		int n=sc.nextInt();
+		int r=sc.nextInt();
+		System.out.println(T.DFS(n, r));
 	}
 }
