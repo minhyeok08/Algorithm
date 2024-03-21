@@ -22,6 +22,7 @@ class Inflearn3_3 {
 		for(int i=0; i<n; i++){
 			arr[i] = sc.nextInt();
 		}
+		
 		System.out.print(T.solution(n, k, arr));
 	}
 }
