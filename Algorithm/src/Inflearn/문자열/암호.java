@@ -10,7 +10,7 @@ public class 암호 {
 		{
 			String tmp = str.substring(0,7).replace('#', '1').replace('*', '0');	// 인덱스 0부터 6까지 추출 후 문자 변환
 			int num = Integer.parseInt(tmp, 2);	// 2진수 tmp를 10진수 정수로 변환
-			System.out.println(num);
+			//System.out.println(num);
 			char x = (char)num;	// 문자로 변환
 			//System.out.print(x);
 			answer += x;
@@ -27,7 +27,7 @@ public class 암호 {
 		int n = sc.nextInt();
 		String str = sc.next();
 		
-		System.out.println(T.Solution(n,str));
+		System.out.print(T.Solution(n,str));
 	}
 
 }
