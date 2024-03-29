@@ -26,7 +26,6 @@ public class 격자판최대합2 {
 		}
 		answer = Integer.max(answer, sum);
 		answer = Integer.max(answer, sum2);
-		
 		return answer;
 	}
 	public static void main(String[] args) {
