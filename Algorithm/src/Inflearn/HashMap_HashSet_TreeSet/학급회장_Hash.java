@@ -26,7 +26,6 @@ public class 학급회장_Hash {
 				answer = key;
 			}
 		}
-
 		return answer;
 	}
 	public static void main(String[] args) {
