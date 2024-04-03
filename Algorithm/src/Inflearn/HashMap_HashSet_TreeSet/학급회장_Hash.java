@@ -1,4 +1,4 @@
-package HashMap_HashSet_TreeSet;
+package Inflearn.HashMap_HashSet_TreeSet;
 import java.util.*;
 public class 학급회장_Hash {
 	public Character Solution(int n, String str)
