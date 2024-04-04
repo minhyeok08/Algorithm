@@ -18,9 +18,10 @@ public class 올바른괄호 {
 		}
 		if(!stack.isEmpty())
 			answer = "NO";
+		
 		return answer;
 	}
-
+	
 	public static void main(String[] args){
 		올바른괄호 T = new 올바른괄호();
 		Scanner sc = new Scanner(System.in);
