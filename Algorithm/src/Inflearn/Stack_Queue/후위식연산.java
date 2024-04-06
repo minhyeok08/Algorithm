@@ -1,4 +1,6 @@
 package Inflearn.Stack_Queue;
+// *** 코딩테스트 인터뷰에 자주 등장하는 문제
+
 // 후위식 연산 => 스택 표현
 // 숫자 => push 연산자 => 계산
 // 먼저 pop한 것 rt 그 다음 pop한 것 lt로 두어서 lt - rt가 될 수 있게끔 (순서 중요)
