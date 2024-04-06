@@ -19,18 +19,21 @@ public class 크레인인형뽑기 {
 		{
 			for(int i=0; i<arr.length; i++)
 			{
-				int tmp = arr[i][pos-1];
-				arr[i][pos-1] = 0;
-				if(!stack.isEmpty() && stack.peek()==tmp)	// 추출한 인형이 스택의 인형과 같을 때 // 경우의수 확실한것부터 처리 나머지 else처리
+				if(arr[i][pos-1]!=0)
 				{
-					answer += 2;
-					stack.pop();
+					int tmp = arr[i][pos-1];
+					arr[i][pos-1] = 0;
+					if(!stack.isEmpty() && stack.peek()==tmp)	// 추출한 인형이 스택의 인형과 같을 때 // 경우의수 확실한것부터 처리 나머지 else처리
+					{
+						answer += 2;
+						stack.pop();
+					}
+					else
+					{
+						stack.push(tmp);					
+					}
+					break;
 				}
-				else
-				{
-					stack.push(tmp);					
-				}
-				break;
 			}
 		}
 		return answer;
