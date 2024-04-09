@@ -35,6 +35,7 @@ public class 응급실 {
 			if(cur != null)	//	현재 환자의 우선 순위가 가장 높으면
 			{
 				answer ++;	// 치료 받고 answer ++
+				
 				if(cur.id == m)	// 현재 환자의 id가 구하려는 환자라면 return
 					return answer;
 			}
