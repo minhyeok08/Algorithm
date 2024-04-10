@@ -1,5 +1,5 @@
 package Inflearn.Sorting_Searching;
-
+// 삽입 정렬 응용
 import java.util.*;
 public class LRU {
 	public int[] Solution(int n, int m, int[] arr)
