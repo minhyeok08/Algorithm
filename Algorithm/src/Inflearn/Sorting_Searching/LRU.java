@@ -31,6 +31,7 @@ public class LRU {
 			}
 			cache[0] = x;
 		}
+		
 		return cache;
 	}
 	public static void main(String[] args) {
