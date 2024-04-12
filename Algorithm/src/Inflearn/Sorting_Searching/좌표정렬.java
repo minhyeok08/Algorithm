@@ -12,7 +12,7 @@ class Point implements Comparable<Point>{
 		// TODO Auto-generated method stub
 		if(this.x==o.x)
 		{
-			return this.y-o.y;
+			return this.y-o.y;	// return 음수 => 오름차순 // 양수 => 내림차순
 		}
 		else
 		{
