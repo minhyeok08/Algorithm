@@ -20,7 +20,7 @@ class Point implements Comparable<Point>{
 		}		
 	}
 }
-class Main{
+class 좌표정렬{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
