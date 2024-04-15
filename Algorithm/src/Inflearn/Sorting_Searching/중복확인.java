@@ -12,6 +12,7 @@ public class 중복확인 {
 				return "D";
 			}
 		}
+		
 		return answer;
 	}
 	public static void main(String[] args) {
