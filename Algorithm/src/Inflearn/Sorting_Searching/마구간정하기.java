@@ -6,6 +6,8 @@ import java.util.*;
 1 2 8 4 9
 1 2 4 8 9 => 3
  */
+// 답 범위에 해당될 값을 예상하여 최소값을 lt , 최댓값을 rt값으로 설정
+// 최소거리를 조정하면서 그에 해당하는 말의 개수 조절
 public class 마구간정하기 {
 	public int Check(int[] arr, int dist)
 	{
