@@ -20,6 +20,7 @@ public class 마구간정하기 {
 				ep = arr[i];
 			}
 		}
+		
 		return cnt;
 	}
 	public int Solution(int n, int m, int[] arr)
