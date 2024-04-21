@@ -1,4 +1,4 @@
-package Recursive_Tree_Graph;
+package Inflearn.Recursive_Tree_Graph;
 public class 재귀함수 {
 	public void Recursive(int n)
 	{
