@@ -6,7 +6,7 @@ public class 재귀함수 {
 			return;
 		else
 		{
-			// System.out.print(n+" "); 3 2 1 이 출력됨
+			// System.out.print(n+" "); 메서드 앞에서 출력할 경우 3 2 1 이 출력됨
 			Recursive(n-1);
 			System.out.print(n+" ");
 		}
