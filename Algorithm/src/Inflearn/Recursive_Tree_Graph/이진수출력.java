@@ -15,6 +15,7 @@ public class 이진수출력 {
 	{
 		DFS(n);
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		이진수출력 T = new 이진수출력();
