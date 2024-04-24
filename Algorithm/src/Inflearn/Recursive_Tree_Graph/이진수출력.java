@@ -8,8 +8,7 @@ public class 이진수출력 {
 		{
 			DFS(n/2);
 			System.out.print(n%2);
-		}
-		
+		}		
 	}
 	public void Solution(int n)
 	{
