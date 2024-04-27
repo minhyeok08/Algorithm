@@ -1,6 +1,7 @@
 package Inflearn.Recursive_Tree_Graph;
 
 public class 이진수출력 {
+	
 	public void DFS(int n)
 	{
 		if(n == 0)
