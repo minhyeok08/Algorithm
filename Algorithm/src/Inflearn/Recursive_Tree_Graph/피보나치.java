@@ -11,6 +11,7 @@ public class 피보나치 {
 		else 
 			return DFS(n-2) + DFS(n-1);
 	}
+	
 	public static void main(String[] args){
 		피보나치 T = new 피보나치();
 		int n = 10;
