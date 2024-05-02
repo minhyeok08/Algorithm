@@ -16,5 +16,4 @@ public class 팩토리얼 {
 		팩토리얼 T = new 팩토리얼();
 		System.out.println(T.DFS(5));
 	}
-
 }
