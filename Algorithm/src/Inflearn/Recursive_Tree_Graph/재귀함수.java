@@ -20,5 +20,4 @@ public class 재귀함수 {
 		재귀함수 T = new 재귀함수();
 		T.Solution(3);
 	}
-
 }
