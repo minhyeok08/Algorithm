@@ -22,5 +22,4 @@ public class 이진수출력 {
 		이진수출력 T = new 이진수출력();
 		T.Solution(10);
 	}
-
 }
