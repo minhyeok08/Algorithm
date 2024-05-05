@@ -21,7 +21,6 @@ public class 이진트리순회_DFS {
 			DFS(root.rt);
 		}
 	}
-	
 	public static void main(String[] args){
 		이진트리순회_DFS tree = new 이진트리순회_DFS();
 		tree.root = new Node(1);
