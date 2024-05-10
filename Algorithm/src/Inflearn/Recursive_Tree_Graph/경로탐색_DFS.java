@@ -38,6 +38,7 @@ public class 경로탐색_DFS {
 		}
 		ch[1] = 1;
 		T.DFS(1);
+		
 		System.out.println(answer);
 	}
 
