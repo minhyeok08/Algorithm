@@ -4,6 +4,7 @@ public class 경로탐색_DFS {
 	static int n, m, answer = 0;
 	static int[][] graph;	
 	static int[] ch;
+	
 	public void DFS(int x)
 	{
 		if(x==n)
