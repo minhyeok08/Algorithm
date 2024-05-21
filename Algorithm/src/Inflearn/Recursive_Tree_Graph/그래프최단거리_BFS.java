@@ -54,8 +54,7 @@ public class 그래프최단거리_BFS {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
 			graph.get(a).add(b);
-		}
-		
+		}		
 		ch = new int[n+1];
 		dis = new int[n+1];
 		T.BFS(1);
