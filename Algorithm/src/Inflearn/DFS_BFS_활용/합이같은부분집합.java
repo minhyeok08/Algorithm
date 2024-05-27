@@ -1,4 +1,4 @@
-package DFS_BFS_활용;
+package Inflearn.DFS_BFS_활용;
 
 import java.util.*;
 class 합이같은부분집합{
@@ -21,6 +21,7 @@ class 합이같은부분집합{
 			DFS(L+1, sum, arr);
 		}
 	}
+	
 	public static void main(String[] args){
 		합이같은부분집합 T = new 합이같은부분집합();
 		Scanner sc = new Scanner(System.in);
