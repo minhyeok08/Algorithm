@@ -1,5 +1,6 @@
 package Inflearn.DFS_BFS_활용;
 import java.util.*;
+
 public class 중복순열구하기 {
 	static int n, m;
 	static int[] pm;
