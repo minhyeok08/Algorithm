@@ -1,8 +1,5 @@
 package Inflearn.DFS_BFS_활용;
 import java.util.*;
-// L = 0 / pm[0] = 3
-// L = 1 / pm[1] = 3
-// L = 2 / 
 
 public class 순열구하기 {
 	static int n, m;
