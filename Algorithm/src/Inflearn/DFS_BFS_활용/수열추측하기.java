@@ -18,7 +18,8 @@ public class 수열추측하기{
 	public void DFS(int L, int sum){
 		if(flag) 
 			return;
-		if(L==n){
+		if(L==n)
+		{
 			if(sum==f){
 				for(int x : p) 
 				{
@@ -27,7 +28,8 @@ public class 수열추측하기{
 				flag=true;
 			}
 		}
-		else{
+		else
+		{
 			for(int i=1; i<=n; i++){
 				if(ch[i]==0){
 					ch[i] = 1;
