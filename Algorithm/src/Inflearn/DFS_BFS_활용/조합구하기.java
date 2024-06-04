@@ -23,6 +23,7 @@ public class 조합구하기 {
 			}
 		}
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		조합구하기 T = new 조합구하기();
