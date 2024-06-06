@@ -48,6 +48,7 @@ public class 미로의최단거리통로 {
 		미로의최단거리통로 T = new 미로의최단거리통로();
 		Scanner sc = new Scanner(System.in);
 		board = new int[8][8];
+		dis = new int[8][8]; // 거리 계산 배열
 		for(int i=1; i<8; i++)
 		{
 			for(int j=1; j<8; j++)
@@ -56,7 +57,6 @@ public class 미로의최단거리통로 {
 			}
 		}
 		board[1][1] = 1;
-		dis = new int[8][8];
 		T.BFS(1, 1);
 	}
 
