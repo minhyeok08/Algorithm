@@ -26,6 +26,7 @@ public class 미로탐색_DFS {
 			}
 		}
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		미로탐색_DFS T = new 미로탐색_DFS();
