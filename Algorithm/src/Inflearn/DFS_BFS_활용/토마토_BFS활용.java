@@ -27,10 +27,9 @@ public class 토마토_BFS활용 {
 				{
 					board[nx][ny] = 1;
 					Q.offer(new Point2(nx, ny));
-					dis[nx][ny] = dis[tmp.x][tmp.y] + 1;
+					dis[nx][ny] = dis[tmp.x][tmp.y] + 1;	// 현재까지 걸린 일수 + 1
 				}
-			}
-			
+			}			
 		}
 		
 	}
