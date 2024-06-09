@@ -1,7 +1,7 @@
 package Inflearn.DFS_BFS_활용;
 import java.util.*;
 class Point2 {
-	public int x, y;
+	int x, y;
 	Point2(int x, int y)
 	{
 		this.x = x;
