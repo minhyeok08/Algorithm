@@ -51,7 +51,6 @@ public class 피자배달거리 {
 		home = new ArrayList<Point4>();
 		pizza = new ArrayList<Point4>();
 		combi = new int[m];
-		
 		for(int i=0; i<n; i++)
 		{
 			for(int j=0; j<n; j++)
@@ -67,9 +66,7 @@ public class 피자배달거리 {
 				}
 			}
 		}
-		
 		len = pizza.size();	// 전체 피자집 개수
-		
 		T.DFS(0, 0);
 		System.out.println(answer);
 	}
