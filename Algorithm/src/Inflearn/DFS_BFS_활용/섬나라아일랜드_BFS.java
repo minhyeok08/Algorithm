@@ -49,6 +49,7 @@ public class 섬나라아일랜드_BFS {
 			}
 		}
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		섬나라아일랜드_BFS T = new 섬나라아일랜드_BFS();
