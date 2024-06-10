@@ -55,7 +55,6 @@ public class 토마토_BFS활용 {
 				}
 			}
 		}
-		
 		T.BFS();
 		for(int i=0; i<n; i++)
 		{
