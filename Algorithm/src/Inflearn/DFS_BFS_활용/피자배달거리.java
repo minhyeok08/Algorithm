@@ -51,6 +51,7 @@ public class 피자배달거리 {
 		home = new ArrayList<Point4>();
 		pizza = new ArrayList<Point4>();
 		combi = new int[m];
+		
 		for(int i=0; i<n; i++)
 		{
 			for(int j=0; j<n; j++)
