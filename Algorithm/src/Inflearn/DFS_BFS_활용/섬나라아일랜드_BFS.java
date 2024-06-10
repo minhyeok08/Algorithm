@@ -56,6 +56,7 @@ public class 섬나라아일랜드_BFS {
 		Scanner sc = new Scanner(System.in);
 		n = sc.nextInt();
 		board = new int[n][n];
+		
 		for(int i=0; i<n; i++)
 		{
 			for(int j=0; j<n; j++)
