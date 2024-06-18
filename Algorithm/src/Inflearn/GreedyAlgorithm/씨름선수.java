@@ -14,7 +14,7 @@ class Body implements Comparable<Body>{
 }
 public class 씨름선수 {
 	static int cnt = 0;
-	public int Solution(ArrayList<Body> arr , int n)
+	public int Solution(ArrayList<Body> arr)
 	{
 		int max = Integer.MIN_VALUE;
 		Collections.sort(arr);	// 키 순 정렬
@@ -40,7 +40,7 @@ public class 씨름선수 {
 			int w = sc.nextInt();
 			arr.add(new Body(h, w));
 		}
-		System.out.println(T.Solution(arr, n));
+		System.out.println(T.Solution(arr));
 	}
 
 }
