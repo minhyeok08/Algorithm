@@ -8,6 +8,7 @@ class Time implements Comparable<Time>{
 		this.s = s;
 		this.e = e;
 	}
+	
 	@Override
 	public int compareTo(Time O)	// 정렬부분이 Point!!
 	{
