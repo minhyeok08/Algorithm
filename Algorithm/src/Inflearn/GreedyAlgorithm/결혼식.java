@@ -60,7 +60,6 @@ public class 결혼식 {
 			arr.add(new Time2(s, 's'));
 			arr.add(new Time2(e, 'e'));
 		}
-		
 		System.out.println(T.Solution(arr));
 	}
 
