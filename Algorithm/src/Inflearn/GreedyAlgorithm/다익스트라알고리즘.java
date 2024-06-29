@@ -17,6 +17,7 @@ class Edge implements Comparable<Edge>
 		return this.cost - O.cost;	// 현재객체와 비교객체 순서를 유지한상태로 음수 => 오름차순
 	}
 }
+
 public class 다익스트라알고리즘 {
 	static int n, m;
 	static ArrayList<ArrayList<Edge>> graph;
