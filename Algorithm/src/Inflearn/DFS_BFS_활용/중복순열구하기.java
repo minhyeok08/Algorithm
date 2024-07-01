@@ -23,6 +23,7 @@ public class 중복순열구하기 {
 			}
 		}
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		중복순열구하기 T = new 중복순열구하기();

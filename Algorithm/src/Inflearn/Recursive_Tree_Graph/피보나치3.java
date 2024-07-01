@@ -1,5 +1,5 @@
 package Inflearn.Recursive_Tree_Graph;
-public class 피보나치2 {
+public class 피보나치3 {
 	static int[] fibo;
 	public int DFS(int n){
 		if(fibo[n]>0) 
@@ -20,7 +20,7 @@ public class 피보나치2 {
 	}
 	
 	public static void main(String[] args){
-		피보나치2 T = new 피보나치2();
+		피보나치3 T = new 피보나치3();
 		int n=45;
 		fibo = new int[n+1];
 		T.DFS(n);
