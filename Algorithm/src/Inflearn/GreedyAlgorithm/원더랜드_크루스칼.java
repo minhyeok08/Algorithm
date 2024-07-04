@@ -12,7 +12,6 @@ class Edge2 implements Comparable <Edge2> {
 		return this.cost - ob.cost;
 	}
 }
-
 public class 원더랜드_크루스칼 {
 	static int[] unf;
 	public static int Find(int v) {
