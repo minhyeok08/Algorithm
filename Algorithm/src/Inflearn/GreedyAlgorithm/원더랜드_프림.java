@@ -10,7 +10,7 @@ class Edge3 implements Comparable<Edge3>{
     }
     @Override
     public int compareTo(Edge3 ob){
-        return this.cost-ob.cost;
+        return this.cost - ob.cost;
     }
 }
 class 원더랜드_프림 {
@@ -35,7 +35,7 @@ class 원더랜드_프림 {
 		pQ.offer(new Edge3(1, 0));
 		while(!pQ.isEmpty()){
 			Edge3 tmp=pQ.poll();
-			int ev=tmp.vex;
+			int ev = tmp.vex;
 			if(ch[ev]==0){
 				ch[ev] = 1;
 				answer += tmp.cost;
