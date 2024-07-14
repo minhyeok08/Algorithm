@@ -44,6 +44,7 @@ class 원더랜드_프림 {
 				}
 			}
 		}
+		
 		System.out.println(answer);
 	}
 }
