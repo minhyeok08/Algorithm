@@ -17,7 +17,8 @@ public class 교육과정설계 {
 					return "NO";
 			}
 		}
-		if(!Q.isEmpty())	// 큐에 잔여 필수 과목이 남아 있으면
+		if(!Q.isEmpty())
+			// 큐에 잔여 필수 과목이 남아 있으면
 			return "NO";
 				
 		return answer;
