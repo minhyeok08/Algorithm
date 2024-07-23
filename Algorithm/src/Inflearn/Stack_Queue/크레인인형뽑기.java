@@ -36,6 +36,7 @@ public class 크레인인형뽑기 {
 				}
 			}
 		}
+		
 		return answer;
 	}
 
