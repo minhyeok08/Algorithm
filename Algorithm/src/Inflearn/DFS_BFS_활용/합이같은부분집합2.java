@@ -8,9 +8,13 @@ class 합이같은부분집합2{
 	public void DFS(int L, int sum, int[] arr)
 	{
 		if(flag)
+			
 			return;
+		
 		if(total/2 < sum)
+			
 			return;
+		
 		if(L==n)
 		{
 			if(total/2 == sum)
