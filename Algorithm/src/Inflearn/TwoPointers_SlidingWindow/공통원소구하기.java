@@ -38,7 +38,6 @@ public class 공통원소구하기 {
 			}
 		}
 		
-		
 		return answer;
 	}
 	public static void main(String[] args) {
